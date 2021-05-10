@@ -1,4 +1,5 @@
 import { Flex, Box, Spacer } from '@chakra-ui/react'
+import { Link } from 'react-scroll'
 
 const Navbar = () => {
     return (
@@ -10,7 +11,10 @@ const Navbar = () => {
                     </Box>
                     <Spacer />
                     <Box>
-                        List of items
+                        <Flex>
+                            <Link to="Home">Home</Link>
+                            <Link to="About">About</Link>
+                        </Flex>
                     </Box>
                 </Flex>
             </Box>
